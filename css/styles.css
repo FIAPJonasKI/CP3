@@ -1,0 +1,372 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffe2fe;
+}
+/*Menu no topo da página*/
+header{
+    width: 100%;
+    min-height: 100px;
+    background-color: #ffacfb;
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header li{
+    margin: 20px;
+}
+header h1{
+    font-size: 40px;
+}
+header a:hover{
+    color: white;
+}
+header a{
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s;
+}
+header button{
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+    text-decoration: none;
+    border: none;
+    background-color: #00000000;
+    font-weight: 800;
+    cursor: pointer;
+}
+header button:hover{
+    color: white;
+}
+/*Banner do evento*/
+.banner{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h1{
+    font-size: 48px;
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+    margin: 20px;
+}
+.banner p{
+    font-size: 20px;
+    margin: 25px;
+    color: grey;
+}
+.banner a{
+    background-color: #ffb300;
+    color: black;   
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s; 
+}
+.banner a:hover{
+    background-color: #ffeec5;
+    color: #313131;
+    transition: 0.3s;
+}
+.banner label{
+    color: #313131;
+}
+.banner input{
+    padding: 10px;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #ffb5fd;
+    border: 1px solid #ffb5fd;
+    color: black;
+    font-size: 17px;
+}
+.banner .btn{
+    background-color: #ffb5fd;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+.banner .btn:hover{
+    background-color: #ffdaff;
+    color: grey;
+}
+/*Cards da página*/
+.container{
+    background-color: #ffacfb;
+    width: 100%;
+    margin: 0 auto;
+}
+.dat h1{
+    text-align: center;
+    font-size: 36px;
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+}
+.card-grid{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background-color: #ffcafd;
+    color: #313131;
+    border: 2px solid #ff3cf5;
+    width: 300px;
+    transition: 0.3s; 
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.card-grid a{
+    text-decoration: none;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.card h1{
+    text-align: left;
+    font-size: 20px;
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+}
+.card p{
+    font-size: 16px;
+}
+.card:hover{
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+/*Contato*/
+footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: #363636;
+    color: yellow;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+footer h1{
+    font-size: 40px;
+    color: darkgray;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+}
+footer li{
+    font-size: 15px;
+    margin: 20px;
+    color: darkgray;
+    text-decoration: none;
+    font-weight: 800;
+}
+footer a{
+    color: darkgray;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: yellow;
+}
+/*Botão de fechar a tela de Login*/
+.close-btn-l{
+    color: red;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+.close-btn-l:hover{
+    color: #fab2b2;
+}
+/*Tela de Login*/
+.log{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed; 
+    top: 0;
+}
+.log h2{
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+}
+.log form{
+    display: flex;
+    flex-direction: column;
+}
+.log-content{
+    background-color: #ffacfb;
+    color: #313131;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+.log form label{
+    margin: 10px;
+    font-size: 16px;
+}
+.log form input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-size: 17px;
+}
+/*Botão para logar na conta*/
+.log .btn{
+    background-color: #ffb300;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.log .btn:hover{
+    background-color: #ffeec5;
+    color: grey;
+}
+/*Botão de fechar a tela de Registro*/
+.close-btn-r{
+    color: red;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+.close-btn-r:hover{
+    color: #fab2b2;
+}
+/*Tela de Registro*/
+.rg{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed; 
+    top: 0;
+}
+.rg h2{
+    color: yellow;
+    text-shadow: -1px -1px 0 #c29b00, 1px -1px 0 #c29b00, -1px 1px 0 #c29b00, 1px 1px 0 #c29b00;
+}
+.rg form{
+    display: flex;
+    flex-direction: column;
+}
+.rg-content{
+    background-color: #ffacfb;
+    color: #313131;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+.rg form label{
+    margin: 10px;
+    font-size: 16px;
+}
+.rg form input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-size: 17px;
+}
+/*Botão para criar conta*/
+.rg .btn{
+    background-color: #ffb300;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+.rg .btn:hover{
+    background-color: #ffeec5;
+    color: grey;
+}
+/*Modo Tema Escuro*/
+body.dark-theme{
+    background-color: #130013;
+    color: #f0f0f0;
+}
+#btnMudarTema{
+    color: yellow;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s;
+}
+#btnMudarTema:hover{
+    color: white;
+}
+/*cards da página no modo escuro*/
+body.dark-theme .card{
+    background-color: #4f0049;
+    color: white;
+    border: 2px solid #52134f;
+    transition: 0.3s;
+}
+body.dark-theme .container{
+    background-color: #33002f;
+    transition: 0.3s;
+}
+/*Menu no topo da página no modo escuro*/
+body.dark-theme header{
+    background-color: #41003c;
+    transition: 0.3s;
+}
+/*banner da Página no modo escuro*/
+body.dark-theme .banner p{
+    color: white;
+}
+body.dark-theme .banner label{
+    color: white;
+}
+body.dark-theme .banner input{
+    color: white;
+    background-color: #4f0049;
+}
+/*Tela de Registro no dark mode*/
+body.dark-theme .rg-content{
+    background-color: #4f0049;
+    color: white;
+}
+/*Tela de Login no dark mode*/
+body.dark-theme .log-content{
+    background-color: #4f0049;
+    color: white;
+}

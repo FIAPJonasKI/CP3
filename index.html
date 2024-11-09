@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CP3 Front End</title>
+</head>
+
+<body class="light-theme">
+    <!--Menu da Página-->
+    <header>
+        <h1>OnlineDating</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#Meuscontato">Meus Contatos</a></li>
+                <li><a><button id="btnMudarTema" onclick="mudarTema()">Mudar Tema</button></a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <p><button class="login-btn">Login</button>/<button class="reg-btn">Registrar</button></p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Banner da Página-->
+        <section class="banner">
+            <div>
+                <h1>página de chat de namoro</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ipsum.</p>
+                <form>
+                    <input type="search" id="searchName" name="Sname" />
+                    <button type="submit" class="btn">Procurar</button>
+                </form>
+            </div>
+        </section>
+        <section class="dat" id="experiencias">
+            <div class="container">
+                <h1>Pessoas A Procura</h1>
+                <div class="card-grid">
+                    <!--Card 1-->
+                    <a href="" target="_blank">
+                        <div class="card" id="card-1">
+                            <img src="img/Perfil1.jpg" alt="Usuario 1">
+                            <h1>Usuario 1</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Unde magnam iusto adipisci veniam dolorum explicabo facere?
+                                Iusto porro excepturi facilis.</p>
+                        </div>
+                    </a>
+                    <!--Card 2-->
+                    <a href="" target="_blank">
+                        <div class="card" id="card-2">
+                            <img src="img/perfil2.jfif" alt="Usuario 2">
+                            <h1>Usuario 2</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Unde magnam iusto adipisci veniam dolorum explicabo facere?
+                                Iusto porro excepturi facilis.</p>
+                        </div>
+                    </a>
+                    <!--Card 3-->
+                    <a href="" target="_blank">
+                        <div class="card" id="card-3">
+                            <img src="img/perfil3.jfif" alt="Usuario 3">
+                            <h1>Usuario 3</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Unde magnam iusto adipisci veniam dolorum explicabo facere?
+                                Iusto porro excepturi facilis.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Contato-->
+    <footer id="contato">
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li>
+                    <p>Jonas Kimio Isiki &copy; 2024</p>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <p><a href="https://github.com/FIAPJonasKI" target="_blank">GitHub</a> /
+                        <a href="https://www.linkedin.com/in/jonas-kimio-isiki-43422b275/" target="_blank">Linkedin</a>
+                        /
+                        <a href="mailto:rm560560@fiap.com.br" target="_blank">E-mail</a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!--Tela de Login-->
+    <div id="login" class="log">
+        <div class="log-content">
+            <span class="close-btn-l">X</span>
+            <h2>Login</h2>
+            <form>
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" name="email" required />
+                <label for="inputsenha">Senha:</label>
+                <input type="password" id="inputsenha" name="senha" required />
+                <button type="submit" class="btn">Conectar</button>
+            </form>
+        </div>
+    </div>
+    <!--Tela de Registro-->
+    <div id="reg" class="rg">
+        <div class="rg-content">
+            <span class="close-btn-r">X</span>
+            <h2>Registrar</h2>
+            <form>
+                <label for="inputName">Nome:</label>
+                <input type="text" id="inputName" name="name" required />
+                <label for="inputIdade">Idade:</label>
+                <input type="date" id="inputIdade" name="idade" required />
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" name="email" required />
+                <label for="inputTel">Telefone:</label>
+                <input type="tel" id="inputTel" name="tel" required />
+                <label for="inputsenha">Senha:</label>
+                <input type="password" id="inputsenha" name="senha" required />
+                <label for="inputsenha2">Confirmar Senha:</label>
+                <input type="password" id="inputsenha2" name="senha2" required />
+                <button type="submit" class="btn">Criar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
